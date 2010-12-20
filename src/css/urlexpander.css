@@ -1,5 +1,5 @@
 #bitly_expanded_container {
-    position:fixed;
+    position:absolute;
 
     /* round the corners  */
     bottom:1px;

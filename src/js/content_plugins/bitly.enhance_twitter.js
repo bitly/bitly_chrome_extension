@@ -113,11 +113,14 @@ function shorten_links_click_event( e ) {
     }
     if(final_matches) {
         console.log("found matches for: ", final_matches);
-        chrome.extension.sendRequest({'action' : 'shorten', 'long_url' : final_matches }, function( shortern_response ) {          
-            // console.log("party tapes", boxes, final_matches);
-            console.log("shortern_response", shortern_response);
-            process_short_links( boxes, final_matches, shortern_response );
-        });
+        for(var i=0; i<final_matches.length; i++) {
+            chrome.extension.sendRequest({'action' : 'shorten', 'long_url' : final_matches[i] }, function( shortern_response ) {          
+                // console.log("party tapes", boxes, final_matches);
+                console.log("shortern_response", shortern_response);
+                process_short_links( boxes, final_matches, shortern_response );
+            });            
+        }
+
     }
     
 }

@@ -101,6 +101,7 @@ function brainResponse(jo) {
         });
         container.addEventListener('mouseout', closeBitlyUrlExpanderBox);
         container.addEventListener('click', function(e) {
+            e.preventDefault();
             var clss = e.target.className, link_box = _id("always_for_this_domain"), params = {};
             if(e.target.parentNode === link_box) {
                 //bg.add_no_expand_domain( document.location.host );
@@ -110,6 +111,7 @@ function brainResponse(jo) {
                 return;
             }
             if(clss === "bitly_url_expander_box_close") {
+                e.stopPropagation();
                 e.preventDefault();
                 // show box here
                 if(!link_box){ return; }
@@ -172,21 +174,10 @@ function brainResponse(jo) {
             el.addEventListener('mouseover', function(e) {
                 clearTimeout(timeout_link);  
                 var evt = e;
-                // positions = findPos( evt.target );
+                positions = findPos( evt.target );
                 console.log(evt)
-                // var left_pos = ( positions[0] > evt.screenX ) ? (evt.screenX-evt.offsetX) : positions[0],
-                //     top_pos = ( positions[1] + evt.target.offsetHeight );
-                // var left_pos = positions[0], top_pos=positions[1];
-                // but I need to only ADD the difference
-                elem_height=evt.target.offsetHeight
-                evt.layerY // where the mouse is
-                var left_pos = evt.clientX, top_pos=evt.clientY + ( elem_height-evt.layerY-evt.offsetY );
-                //+evt.target.offsetHeight
-                // todo, offset to edge of parrent item
-
-                // TODO
-                // add simple opacity animation
-                // hmmm... maybe i should let it hover for like 10 milliseconds
+                var left_pos = ( positions[0] > evt.screenX ) ? (evt.screenX-evt.offsetX) : positions[0],
+                    top_pos = ( positions[1] + evt.target.offsetHeight );
                 container.setAttribute("style", 'display:block; left:'+ left_pos +'px; top:'+ top_pos +'px;'); 
                 // set opacity to 0, then stair step it over a period of time?                                             
                 container.innerHTML = html;
