@@ -101,7 +101,6 @@ function brainResponse(jo) {
         });
         container.addEventListener('mouseout', closeBitlyUrlExpanderBox);
         container.addEventListener('click', function(e) {
-            e.preventDefault();
             var clss = e.target.className, link_box = _id("always_for_this_domain"), params = {};
             if(e.target.parentNode === link_box) {
                 //bg.add_no_expand_domain( document.location.host );

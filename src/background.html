@@ -550,22 +550,32 @@
                 
                 case "page_loaded":
                     
-                    if(enhance_twitter_com && request.domain_host === "twitter.com" ) {
-                        
-                        chrome.tabs.executeScript(sender.tab.id, {file: "js/content_plugins/bitly.enhance_twitter.js"});                        
-                    }
-                
-                    if(!bitly.is_authenticated() || !auto_expand_urls) return;
-                    var injectTabs = sender.tab && sender.tab.url,
-                        no_expand_list = get_no_expand_domains();
+                    var user_data = localfetch("user_data");
+                    /*
+                        Makes determination if used is logged in, toggles 'popup' behavior accordingly
+                            Default popup behavior is to load options.html, login page
+                    */
+
+                    if(user_data && user_data.x_login && user_data.x_apiKey) {
+                        if(enhance_twitter_com && request.domain_host === "twitter.com" ) {
+
+                            chrome.tabs.executeScript(sender.tab.id, {file: "js/content_plugins/bitly.enhance_twitter.js"});                        
+                        }
+
+                        if(!bitly.is_authenticated() || !auto_expand_urls) return;
+                        var injectTabs = sender.tab && sender.tab.url,
+                            no_expand_list = get_no_expand_domains();
+
+                        // only support http || https domains
+                        if(injectTabs && injectTabs.indexOf("http") === 0 &&
+                            no_expand_list.indexOf( request.domain_host ) === -1) {
+
+                                chrome.tabs.insertCSS(sender.tab.id, {file : "css/urlexpander.css"})
+                                chrome.tabs.executeScript(sender.tab.id, {file: "js/content_plugins/bitly.urlexpander.js"});
+                        }                    
+                    }                    
                     
-                    // only support http || https domains
-                    if(injectTabs && injectTabs.indexOf("http") === 0 &&
-                        no_expand_list.indexOf( request.domain_host ) === -1) {
-                            
-                            chrome.tabs.insertCSS(sender.tab.id, {file : "css/urlexpander.css"})
-                            chrome.tabs.executeScript(sender.tab.id, {file: "js/content_plugins/bitly.urlexpander.js"});
-                    }
+
                 break;
                 
                 /*
