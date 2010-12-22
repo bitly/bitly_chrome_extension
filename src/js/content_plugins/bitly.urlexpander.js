@@ -1,5 +1,5 @@
 var page_links, queried_matches = [],
-    timeout_link, expander_visible = false, container, expanded_elements = [], get_more_links_timeout,
+    timeout_link, expander_visible = false, bit_container_elem, expanded_elements = [], get_more_links_timeout,
     //[-_a-zA-Z0-9][.\?!]?
     fullUriRegex = new RegExp( "^((?:https?://){1}[a-zA-Z0-9]{0,3}\.{0,1}(?:[a-zA-Z0-9]{1,8}\.[a-z]{1,3}\\/[-_a-zA-Z0-9]{2,20}))(?:[.\?!]?)$", "gi"),
     // keep this basic list, to eliminate already known items and save some cyles later
@@ -91,16 +91,16 @@ function brainResponse(jo) {
         possible_keywords = [], matched_results = [],
         body = document.body;
     
-    container = document.getElementById("bitly_expanded_container") || document.createElement("div");
-    if(!container.id || container.id === "") {
-        container.id = "bitly_expanded_container";
-        container.addEventListener('mouseover', function(e) {
+    bit_container_elem = document.getElementById("bitly_expanded_container") || document.createElement("div");
+    if(!bit_container_elem.id || bit_container_elem.id === "") {
+        bit_container_elem.id = "bitly_expanded_container";
+        bit_container_elem.addEventListener('mouseover', function(e) {
             clearTimeout(timeout_link);
             expander_visible = true;
             // hmmmmmmmmm
         });
-        container.addEventListener('mouseout', closeBitlyUrlExpanderBox);
-        container.addEventListener('click', function(e) {
+        bit_container_elem.addEventListener('mouseout', closeBitlyUrlExpanderBox);
+        bit_container_elem.addEventListener('click', function(e) {
             var clss = e.target.className, link_box = _id("always_for_this_domain"), params = {};
             if(e.target.parentNode === link_box) {
                 //bg.add_no_expand_domain( document.location.host );
@@ -138,7 +138,7 @@ function brainResponse(jo) {
     
     var matches_links = find_link_elements_by_response( jo );   
      
-    body.appendChild( container );
+    body.appendChild( bit_container_elem );
     
     for(var i=0; i<matches_links.length; i++) {
        
@@ -177,9 +177,9 @@ function brainResponse(jo) {
                 console.log(evt)
                 var left_pos = ( positions[0] > evt.screenX ) ? (evt.screenX-evt.offsetX) : positions[0],
                     top_pos = ( positions[1] + evt.target.offsetHeight );
-                container.setAttribute("style", 'display:block; left:'+ left_pos +'px; top:'+ top_pos +'px;'); 
+                bit_container_elem.setAttribute("style", 'display:block; left:'+ left_pos +'px; top:'+ top_pos +'px;'); 
                 // set opacity to 0, then stair step it over a period of time?                                             
-                container.innerHTML = html;
+                bit_container_elem.innerHTML = html;
                 
                 // let people set this timeout value??!
                 set_close_box_timeout( 1100 ); // give the user a moment to grab the box, or hide it
@@ -203,8 +203,8 @@ function _draw_bit_card() {
 }
 
 function close_container() {
-    container.style.display="none"; 
-    container.innerHTML = "";
+    bit_container_elem.style.display="none"; 
+    bit_container_elem.innerHTML = "";
 }
 
 function closeBitlyUrlExpanderBox(e) {
