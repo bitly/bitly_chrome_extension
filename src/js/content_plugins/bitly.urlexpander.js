@@ -203,8 +203,11 @@ function _draw_bit_card() {
 }
 
 function close_container() {
-    bit_container_elem.style.display="none"; 
-    bit_container_elem.innerHTML = "";
+    if(bit_container_elem) {
+        bit_container_elem.style.display="none"; 
+        bit_container_elem.innerHTML = "";
+    }
+
 }
 
 function closeBitlyUrlExpanderBox(e) {
