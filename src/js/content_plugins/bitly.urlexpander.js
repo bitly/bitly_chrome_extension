@@ -80,9 +80,7 @@ function findPos(obj) {
     return [curleft, curtop];
 }
 
-function brainResponse(jo) {
-    //console.log(jo, "the expanded urls");
-    
+function brainResponse(jo) {    
     // start looking for more
     run_find_more_links();
     
@@ -174,7 +172,6 @@ function brainResponse(jo) {
                 clearTimeout(timeout_link);  
                 var evt = e;
                 positions = findPos( evt.target );
-                console.log(evt)
                 var left_pos = ( positions[0] > evt.screenX ) ? (evt.screenX-evt.offsetX) : positions[0],
                     top_pos = ( positions[1] + evt.target.offsetHeight );
                 bit_container_elem.setAttribute("style", 'display:block; left:'+ left_pos +'px; top:'+ top_pos +'px;'); 
@@ -307,7 +304,6 @@ function open_options_callback() {
 
 
 function init() {
-    //console.log("searching for short links...")
     var matches = find_short_links();   
     queried_matches = queried_matches.concat( matches );
     // close the box, don't let it get stuc
