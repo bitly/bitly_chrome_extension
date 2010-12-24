@@ -196,7 +196,8 @@
                     no_expand_domains_box_elem = _id("no_expand_domains_box"),
                     url_expand_input = _id("show_link_preview"),
                     bod = document.body,
-                    active_account_list = [];
+                    active_account_list = [],
+                    login_attempt_count=0;
 
                 
                 function get_safe_threshold( num_value ) {
@@ -327,115 +328,6 @@
                 }
                 
                 
-                // function display_user_watched_links() {
-
-                //     if(w_list.length>0) {
-                // 
-                //         for( ; w=w_list[i]; i++) {
-                //             
-                //             struture_items.push({
-                //                 type : "li",
-                //                 content : [{
-                //                     type : "input",
-                //                     id : 'watch_item_'+i,
-                //                     attributes : {
-                //                         type : "checkbox",
-                //                         value : w.short_url
-                //                     }
-                //                 },{
-                //                     type : "a",
-                //                     content : w.short_url,
-                //                     attributes : {
-                //                         href : w.short_url,
-                //                         target : "new"
-                //                     }
-                //                 },{
-                //                     text : " since " + timeFormat( w.timestamp ).toLowerCase()
-                //                 },{
-                //                     type : "label",
-                //                     content : "Threshold"
-                //                 }, {
-                //                     type : "input",
-                //                     attributes : {
-                //                         type : 'hidden',
-                //                         name : 'timestamp',
-                //                         value : w.timestamp
-                //                     }
-                //                 }, {
-                //                     type : "input",
-                //                     id : 'w_threshold_'+i,
-                //                     attributes : {
-                //                         type : "text",
-                //                         name : "threshold",
-                //                         value : w.threshold
-                //                     }
-                //                 }, {
-                //                     type : "input",
-                //                     css : "activeButtons",
-                //                     attributes : {
-                //                         type : "submit",
-                //                         value : "Update"
-                //                     }
-                //                 }]
-                //             })                      
-                //         }
-                // 
-                // 
-                //         structure = [{
-                //             type : "h4",
-                //             content : "Watching:"
-                //         }, {
-                //             type : "ul",
-                //             content : struture_items
-                //         }, {
-                //             css : "watch_controls_box",
-                //             content : {
-                //                 type : "a",
-                //                 css : "removeWatchButton",
-                //                 content : "Remove selected",
-                //                 attributes : {
-                //                     href : "#"
-                //                 }
-                //             }
-                //         }]
-                //         
-                //     }
-                // 
-                //     watching_links_box.innerHTML = "";
-                //     watching_links_box.appendChild( fastFrag.create( structure) );
-                //     if(w_list.length<=0) { return; }
-                //     _q(".removeWatchButton", watching_links_box).addEventListener('click', function(e) {
-                //         e.preventDefault();
-                //         var i=0, url_list=[], watch_selected = _qAll("input[type=checkbox]:checked", watching_links_box);
-                //         console.log(watch_selected);
-                //         for(i=0; i<watch_selected.length; i++) {
-                //             url_list.push( watch_selected[i].value );
-                //         }
-                //         if(watch_selected.length>0) {
-                //             setTimeout(function() {
-                //                 display_user_watched_links();                                
-                //             }, 100)
-                // 
-                //         }
-                // 
-                //         
-                //     });
-                //     watching_links_box.addEventListener('click', function(e) {
-                //         console.log(e.target.type)
-                //         var el = e.target, threshold, safe_value, sUrl, p, timestamp=0;
-                //         if(el.type && el.type==="submit") {
-                //             e.preventDefault();
-                //             p = el.parentNode;
-                //             threshold = _q("input[type=text]", p);
-                //             sUrl = _q("input[type=checkbox]", p).value;
-                //             timestamp = (_q("input[type=hidden]", p).value)*1;                            
-                //             safe_value = get_safe_threshold( threshold.value );
-                //             // method for updating a short url here...
-
-                //         }
-                //         
-                //     })
-                // }
                 
                 function display_logs() {
                     
@@ -558,26 +450,6 @@
                             }]
                         }
                     }]
-                    // html += '<h3>Sevices</h3>'
-                    // html += '<p>Share your links on:</p>'
-                    // html += '<ul>'
-                    // for(; account=accounts[i]; i++) {
-                    //     status = (account.active) ? "on" : "off";
-                    //     html += '<li id="'+ account.account_id +'" status="'+status+'">'
-                    //     html += '<img class="account_icon" src="s/graphics/'+ account.account_type +'-'+ status +'.png" border="0" alt="0" />'
-                    //     html += '<span class="account_name">' + ( account.account_name || account.account_login ) + '</span>';
-                    //     html += '<a class="sharingControl" href="#">Sharing ' + status + '</a>'
-                    //     html += '<li>'
-                    // }
-                    // html += '</ul>';
-                    // 
-                    // html += '<div class="meta_graph">'
-                    //     html += '<p>'
-                    //         html += '<a target="new" href="http://bit.ly/a/account">Add or remove</a>';
-                    //         html += ' accounts on bit.ly | <a class="resync" href="#">Refresh account list</a>'
-                    //     html += '</p>'
-                    // html += '</div>'
-
                     
                     shares_elem.innerHTML = "";
                     shares_elem.appendChild( fastFrag.create( structure )  );
@@ -587,6 +459,7 @@
                 
                 function signin_form_event( e ){
                     e.preventDefault();
+                    login_attempt_count+=1;
                     // validate form
                     var username = _id("username"),
                         pass = _id("password"),
@@ -597,12 +470,11 @@
                         errors_box_elem.style.display="block";
                         return;
                     }
+
                     sign_in_loader_elem.style.display="block";
                     signInButtonContainer_elem.style.display="none";
                     errors_box_elem.style.display="none";
-                    bg.sign_in( username.value, pass.value, function(jo) {
-                        console.log("logging in...")
-                        
+                    bg.sign_in( username.value, pass.value, function(jo) {                        
                         //console.log(jo)
                         if(jo && !jo.error) {
                             document.location.reload();
@@ -612,6 +484,15 @@
                         } else {
                             error_message_text = "An error occurred trying to sign in"
                         }
+                        
+                        if(login_attempt_count > 5) {
+                            alert("It looks like you found some type of bug, please email us at support@bit.ly with your username.");
+                            document.location.reload();                            
+                        } else if(login_attempt_count > 3) {
+                            alert("Please contact us at support@bit.ly, there appears to be a problem");
+                        }
+                        
+                        
                         sign_in_loader_elem.style.display="none";
                         signInButtonContainer_elem.style.display="block";
                         errors_box_elem.innerHTML = error_message_text;
@@ -619,7 +500,7 @@
                         console.log("Failed sign in")
                         bg.logger("Failed sign in attempt: " + JSON.stringify( jo ) );
                     
-                    })
+                    });
                 
                 }
                 
