@@ -103,6 +103,7 @@
         function sign_out() {
             bitly.remove_credentials();
             auto_expand_urls = true;
+            enhance_twitter_com=true;
             
             if(bit_interval) { clearInterval( bit_interval ); }
             
@@ -126,6 +127,7 @@
             bit_db.remove("user_data", delete_sql_handler );
             bit_db.remove("domain", delete_sql_handler );
             bit_db.remove("auto_expand_urls", delete_sql_handler );
+            bit_db.remove("enhance_twitter_com", delete_sql_handler );            
             bitly.set_domain("bit.ly");
 
             
@@ -289,7 +291,17 @@
             auto_expand_urls = (bool_value) ? true : false;
             bit_db.save("auto_expand_urls", { 'auto_expand' : auto_expand_urls }, function() {
                 //anything here
-            })
+            });
+        }
+        function set_enhance_twitter_com( bool_value ) {
+            enhance_twitter_com=(bool_value) ? true : false;
+            bit_db.save("enhance_twitter_com", { 'enhance_twitter_com' : enhance_twitter_com }, function() {
+                //anything here
+            });            
+        }
+        
+        function get_enhance_twitter() {
+            return enhance_twitter_com;
         }
         
         function resync_linked_account( callback ) {
@@ -385,10 +397,6 @@
         }
         
         function set_auto_copy_from_cache() {
-            // bit_db.save("auto_copy", {'copy' : copy_bool }, function(){
-            //     // save was successful
-            //     localstore("auto_copy", copy_bool);
-            // });
             bit_db.find("auto_copy", function(jo) {
                 if(jo === undefined) return;
                 localstore("auto_copy", jo.copy );
@@ -411,6 +419,12 @@
                 else auto_expand_urls = jo.auto_expand;
             })
         }
+        function set_enhance_twitter_com_from_cache() {
+            bit_db.find("enhance_twitter_com", function(jo) {
+                if(jo === undefined) enhance_twitter_com=true
+                else enhance_twitter_com = jo.enhance_twitter_com;
+            })
+        }        
         
         function set_api_domain_from_cache() {
             bit_db.find("domain", function(domain_string) {
@@ -520,7 +534,7 @@
         set_no_expand_domains_from_cache();
         set_auto_copy_from_cache();
         set_notifications_from_cache();
-
+        set_enhance_twitter_com_from_cache();
 
        
        

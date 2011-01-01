@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     
-                    <!-- <div class="options_container">
+                    <div class="options_container">
                         <h3>Twitter Enhance</h3>
                         <p>Display a shorten button on twitter.com when I enter a long URL</p>
                         <div>
@@ -66,13 +66,13 @@
                             <label for="enhance_twitter">Enhance Twitter</label>
                         
                         </div>
-                    </div>   -->                  
+                    </div>                    
                     
                     <div class="options_container">
                         <h3>Trend Notifications</h3>
                         <p>Automatically notify me when my link starts to become popular, or trend. Notifications will be shown when a link reaches the threshold specified below during the past hour.</p>
                         <div>
-                            <input type="checkbox" name="auto_copy_short_urls" value="" id="watch_urls">
+                            <input type="checkbox" name="watch_urls" value="" id="watch_urls">
                             <label for="watch_urls">Enable Notifications</label>
                             
                             <div class="smallInputContainer notificationInnerContainer" style="display:none;">
@@ -195,6 +195,7 @@
                     note_prefs = bg.get_note_preferences(),
                     user_data = bg.localfetch("user_data"),
                     auto_copy_elem = _id("auto_copy_short_urls"),
+                    enhance_twitter_input = _id("enhance_twitter"),
                     errors_box_elem = _id("errors_box"),
                     signInButtonContainer_elem = _id("signInButtonContainer"),
                     sign_in_loader_elem = _id("sign_in_loader"),
@@ -537,6 +538,12 @@
                         url_expand_input.checked=false;
                     }
                     
+                    if(bg.get_enhance_twitter()) {
+                        enhance_twitter_input.checked=true;
+                    } else {
+                        enhance_twitter_input.checked=false;
+                    }
+                    
                     if( bg.get_auto_copy() ) {
                         auto_copy_elem.checked=true;
                     } else {
@@ -601,10 +608,20 @@
                         url_expand_input.checked=false;
                         no_expand_domains_box_elem.innerHTML = "";
                     }
-                    bg.set_url_expansion( e.target.checked )
+                    bg.set_url_expansion( e.target.checked );
                 });
                 auto_copy_elem.addEventListener("change", function(e) {
                     bg.set_auto_copy(e.target.checked);
+                });
+                
+                enhance_twitter_input.addEventListener('change', function(e) {
+                    if(e.target.checked) {
+                        
+                    } else {
+                        enhance_twitter_input.checked=false;
+                    }
+                    
+                    bg.set_enhance_twitter_com( e.target.checked );
                 });
                 
                 no_expand_domains_box_elem.addEventListener('click', function(e) {
