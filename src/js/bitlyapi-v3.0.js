@@ -338,7 +338,7 @@ function parse_oauth_response( url_string ) {
 }
 
 function is_large_arrary( array ) {
-    if( typeof array !== "string" && array.length > 15) { return true; }
+    if( typeof array == "object" && typeof array !== "string" && array.length > 15) { return true; }
     return false;
 }
 
