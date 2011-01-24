@@ -472,6 +472,23 @@
             return sqlDB("bitly_local_db");
         }
         
+        function add_link_context_menu() {
+            var params = {
+                'type' : 'normal',
+                'title' : 'Shorten link with bit.ly',
+                'contexts' : ["link"],
+                'onclick' : _on_context_menu_link_click,
+                'documentUrlPatterns' : ['http://*/*', 'https://*/*']
+            }
+            
+            chrome.contextMenus.create(params, function() {
+                console.log("created a context menu", chrome.extension.lastError)
+            })
+        }
+        function _on_context_menu_link_click() {
+            
+        }
+        
         function test_metrics() {
             // clicks|country|referrers
             bitly.metrics("clicks", function(jo) {
@@ -535,6 +552,7 @@
         set_auto_copy_from_cache();
         set_notifications_from_cache();
         set_enhance_twitter_com_from_cache();
+        //add_link_context_menu();
 
        
        
