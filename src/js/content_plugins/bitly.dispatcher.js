@@ -1,8 +1,9 @@
 (function() {
     function dispatch_callback(jo) {}
     function init() {
-        var body, h = document.location && document.location.host, d_hosts=["bit.ly", "bitly.org", "j.mp", "bitly.net"];
-        if( d_hosts.indexOf( h ) >=0 ) {
+        var body, h = document.location && document.location.host, 
+            d_hosts=["bit.ly", "bitly.org", "j.mp", "bitly.net", "bitly.tv", "blog.bit.ly", "bitly.pro", "bitly.com"];
+        if( d_hosts.indexOf( h ) >=0 || /[^.]{2,}\.bitly\.net$/.test(h) ) {
             var promos = document.getElementsByClassName("ext_bitly_chrome_promo_delay"), elem, mark=document.createElement("span");
             for(var i=0; i<promos.length; i++) {
                 elem=promos[i];
