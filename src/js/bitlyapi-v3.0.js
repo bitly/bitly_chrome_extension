@@ -338,7 +338,7 @@ function parse_oauth_response( url_string ) {
 }
 
 function is_large_arrary( array ) {
-    if( typeof array == "object" && typeof array !== "string" && array.length > 15) { return true; }
+    if( typeof array !== "string" && array.length > 15) { return true; }
     return false;
 }
 
@@ -374,7 +374,7 @@ function internal_multiget( api_url, param_key, bit_params, callback ) {
 
 function chunk(array, chunkSize) {
    var base = [], i, size = chunkSize || 5;
-   for(i=0; i<array.length; i+=size ) { base.push( array.slice( i, i+size ) ); }
+   for(i=0; i<array.length; i+=chunkSize ) { base.push( array.slice( i, i+chunkSize ) ); }
    return base;
 }
 
