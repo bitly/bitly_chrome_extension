@@ -183,6 +183,541 @@ Daily Stats:
 - 1,453 weekly installs
 ::end::
 
+
+Tue Sep 14 14:43:01 EDT 2010
+Daily Stats:
+- 18,963 users
+- 1,441 weekly installs
+::end::
+
+Wed Sep 15 14:43:01 EDT 2010
+Daily Stats:
+- 18,963 users
+- 1,441 weekly installs
+::end::
+
+Thu Sep 16 14:43:01 EDT 2010
+Daily Stats:
+- 19,104 users
+- 1,414 weekly installs
+::end::
+
+Fri Sep 17 14:43:01 EDT 2010
+Daily Stats:
+- 19,233 users
+- 1,386 weekly installs
+::end::
+
+Sat Sep 18 14:43:01 EDT 2010
+Daily Stats:
+- 19,344 users
+- 1,429 weekly installs
+::end::
+
+Sun Sep 19 14:43:01 EDT 2010
+Daily Stats:
+- 19,344 users
+- 1,429 weekly installs
+::end::
+
+Mon Sep 20 14:43:01 EDT 2010
+Daily Stats:
+- 19,344 users
+- 1,429 weekly installs
+::end::
+
+Tue Sep 21 14:43:01 EDT 2010
+Daily Stats:
+- 19,368 users
+- 1,423 weekly installs
+::end::
+
+Wed Sep 22 14:43:01 EDT 2010
+Daily Stats:
+- 19,435 users
+- 1,421 weekly installs
+::end::
+
+Thu Sep 23 14:43:00 EDT 2010
+Daily Stats:
+- 19,425 users
+- 1,449 weekly installs
+::end::
+
+Fri Sep 24 14:43:01 EDT 2010
+Daily Stats:
+- 19,704 users
+- 1,522 weekly installs
+::end::
+
+Sat Sep 25 14:43:01 EDT 2010
+Daily Stats:
+- 19,865 users
+- 1,541 weekly installs
+::end::
+
+Sun Sep 26 14:43:01 EDT 2010
+Daily Stats:
+- 19,906 users
+- 1,545 weekly installs
+::end::
+
+Mon Sep 27 14:43:01 EDT 2010
+Daily Stats:
+- 19,840 users
+- 1,556 weekly installs
+::end::
+
+Tue Sep 28 14:43:02 EDT 2010
+Daily Stats:
+- 19,840 users
+- 1,556 weekly installs
+::end::
+
+Wed Sep 29 14:43:01 EDT 2010
+Daily Stats:
+- 20,223 users
+- 1,641 weekly installs
+::end::
+
+Thu Sep 30 14:43:01 EDT 2010
+Daily Stats:
+- 20,223 users
+- 1,641 weekly installs
+::end::
+
+Fri Oct 1 14:43:01 EDT 2010
+Daily Stats:
+- 20,223 users
+- 1,641 weekly installs
+::end::
+
+Sat Oct 2 14:43:02 EDT 2010
+Daily Stats:
+- 20,223 users
+- 1,641 weekly installs
+::end::
+
+Sun Oct 3 14:43:01 EDT 2010
+Daily Stats:
+- 20,223 users
+- 1,641 weekly installs
+::end::
+
+Mon Oct 4 14:43:01 EDT 2010
+Daily Stats:
+- 20,731 users
+- 1,589 weekly installs
+::end::
+
+Tue Oct 5 14:43:01 EDT 2010
+Daily Stats:
+- 20,609 users
+- 1,533 weekly installs
+::end::
+
+Wed Oct 6 14:43:02 EDT 2010
+Daily Stats:
+- 20,609 users
+- 1,533 weekly installs
+::end::
+
+Fri Oct 8 14:43:01 EDT 2010
+Daily Stats:
+- 20,973 users
+- 1,291 weekly installs
+::end::
+
+Sat Oct 9 14:43:00 EDT 2010
+Daily Stats:
+- 21,056 users
+- 1,276 weekly installs
+::end::
+
+Sun Oct 10 14:43:01 EDT 2010
+Daily Stats:
+- 21,069 users
+- 1,275 weekly installs
+::end::
+
+Mon Oct 11 14:43:01 EDT 2010
+Daily Stats:
+- 21,006 users
+- 1,287 weekly installs
+::end::
+
+Tue Oct 12 14:43:01 EDT 2010
+Daily Stats:
+- 21,097 users
+- 1,306 weekly installs
+::end::
+
+Wed Oct 13 14:43:01 EDT 2010
+Daily Stats:
+- 21,097 users
+- 1,306 weekly installs
+::end::
+
+Thu Oct 14 14:43:01 EDT 2010
+Daily Stats:
+- 21,224 users
+- 1,305 weekly installs
+::end::
+
+Fri Oct 15 14:43:01 EDT 2010
+Daily Stats:
+- 21,224 users
+- 1,305 weekly installs
+::end::
+
+Sat Oct 16 14:43:01 EDT 2010
+Daily Stats:
+- 21,224 users
+- 1,305 weekly installs
+::end::
+
+Sun Oct 17 14:43:03 EDT 2010
+Daily Stats:
+- 21,524 users
+- 1,348 weekly installs
+::end::
+
+Mon Oct 18 14:43:02 EDT 2010
+Daily Stats:
+- 21,524 users
+- 1,348 weekly installs
+::end::
+
+Tue Oct 19 14:43:01 EDT 2010
+Daily Stats:
+- 21,524 users
+- 1,348 weekly installs
+::end::
+
+Thu Oct 21 14:43:01 EDT 2010
+Daily Stats:
+- 21,524 users
+- 1,348 weekly installs
+::end::
+
+Fri Oct 22 14:43:01 EDT 2010
+Daily Stats:
+- 21,524 users
+- 1,348 weekly installs
+::end::
+
+Sat Oct 23 14:43:01 EDT 2010
+Daily Stats:
+- 21,628 users
+- 1,273 weekly installs
+::end::
+
+Mon Oct 25 14:43:01 EDT 2010
+Daily Stats:
+- 21,670 users
+- 1,280 weekly installs
+::end::
+
+Tue Oct 26 14:43:01 EDT 2010
+Daily Stats:
+- 21,670 users
+- 1,280 weekly installs
+::end::
+
+Wed Oct 27 14:43:01 EDT 2010
+Daily Stats:
+- 21,703 users
+- 1,306 weekly installs
+::end::
+
+Fri Oct 29 14:43:01 EDT 2010
+Daily Stats:
+- 21,962 users
+- 1,292 weekly installs
+::end::
+
+Sat Oct 30 14:43:03 EDT 2010
+Daily Stats:
+- 21,962 users
+- 1,292 weekly installs
+::end::
+
+Sun Oct 31 14:43:01 EDT 2010
+Daily Stats:
+- 22,042 users
+- 1,261 weekly installs
+::end::
+
+Mon Nov 1 14:43:01 EDT 2010
+Daily Stats:
+- 21,887 users
+- 1,244 weekly installs
+::end::
+
+Tue Nov 2 14:43:03 EDT 2010
+Daily Stats:
+- 21,887 users
+- 1,244 weekly installs
+::end::
+
+Wed Nov 3 14:43:00 EDT 2010
+Daily Stats:
+- 21,887 users
+- 1,244 weekly installs
+::end::
+
+Thu Nov 4 14:43:01 EDT 2010
+Daily Stats:
+- 22,008 users
+- 1,197 weekly installs
+::end::
+
+Fri Nov 5 14:43:01 EDT 2010
+Daily Stats:
+- 22,181 users
+- 1,202 weekly installs
+::end::
+
+Sat Nov 6 14:43:01 EDT 2010
+Daily Stats:
+- 22,355 users
+- 1,235 weekly installs
+::end::
+
+Sun Nov 7 14:43:00 EST 2010
+Daily Stats:
+- 22,387 users
+- 1,229 weekly installs
+::end::
+
+Mon Nov 8 14:43:00 EST 2010
+Daily Stats:
+- 22,322 users
+- 1,242 weekly installs
+::end::
+
+Tue Nov 9 14:43:00 EST 2010
+Daily Stats:
+- 22,327 users
+- 1,261 weekly installs
+::end::
+
+Wed Nov 10 14:43:03 EST 2010
+Daily Stats:
+- 22,474 users
+- 1,316 weekly installs
+::end::
+
+Thu Nov 11 14:43:00 EST 2010
+Daily Stats:
+- 22,503 users
+- 1,348 weekly installs
+::end::
+
+Fri Nov 12 14:43:02 EST 2010
+Daily Stats:
+- 22,609 users
+- 1,373 weekly installs
+::end::
+
+Sat Nov 13 14:43:01 EST 2010
+Daily Stats:
+- 22,953 users
+- 1,368 weekly installs
+::end::
+
+Sun Nov 14 14:43:02 EST 2010
+Daily Stats:
+- 23,036 users
+- 1,388 weekly installs
+::end::
+
+Mon Nov 15 14:43:01 EST 2010
+Daily Stats:
+- 22,775 users
+- 1,382 weekly installs
+::end::
+
+Tue Nov 16 14:43:01 EST 2010
+Daily Stats:
+- 22,877 users
+- 1,418 weekly installs
+::end::
+
+Wed Nov 17 14:43:01 EST 2010
+Daily Stats:
+- 23,067 users
+- 1,470 weekly installs
+::end::
+
+Fri Nov 19 14:43:00 EST 2010
+Daily Stats:
+- 23,414 users
+- 1,558 weekly installs
+::end::
+
+Sat Nov 20 14:43:01 EST 2010
+Daily Stats:
+- 23,539 users
+- 1,573 weekly installs
+::end::
+
+Sun Nov 21 14:43:08 EST 2010
+Daily Stats:
+- 23,563 users
+- 1,595 weekly installs
+::end::
+
+Mon Nov 22 14:43:01 EST 2010
+Daily Stats:
+- 23,563 users
+- 1,595 weekly installs
+::end::
+
+Tue Nov 23 14:43:02 EST 2010
+Daily Stats:
+- 23,497 users
+- 1,616 weekly installs
+::end::
+
+Wed Nov 24 14:43:01 EST 2010
+Daily Stats:
+- 23,497 users
+- 1,616 weekly installs
+::end::
+
+Thu Nov 25 14:43:01 EST 2010
+Daily Stats:
+- 23,497 users
+- 1,616 weekly installs
+::end::
+
+Fri Nov 26 14:43:01 EST 2010
+Daily Stats:
+- 23,497 users
+- 1,616 weekly installs
+::end::
+
+Sat Nov 27 14:43:01 EST 2010
+Daily Stats:
+- 23,497 users
+- 1,616 weekly installs
+::end::
+
+Sun Nov 28 14:43:01 EST 2010
+Daily Stats:
+- 23,497 users
+- 1,616 weekly installs
+::end::
+
+Mon Nov 29 14:43:01 EST 2010
+Daily Stats:
+- 23,497 users
+- 1,616 weekly installs
+::end::
+
+Tue Nov 30 14:43:01 EST 2010
+Daily Stats:
+- 23,497 users
+- 1,616 weekly installs
+::end::
+
+Thu Dec 2 14:43:01 EST 2010
+Daily Stats:
+- 24,523 users
+- 1,687 weekly installs
+::end::
+
+Fri Dec 3 14:43:01 EST 2010
+Daily Stats:
+- 24,523 users
+- 1,687 weekly installs
+::end::
+
+Sat Dec 4 14:43:01 EST 2010
+Daily Stats:
+- 24,912 users
+- 1,472 weekly installs
+::end::
+
+Sun Dec 5 14:43:01 EST 2010
+Daily Stats:
+- 24,994 users
+- 1,477 weekly installs
+::end::
+
+Mon Dec 6 14:43:01 EST 2010
+Daily Stats:
+- 24,903 users
+- 1,515 weekly installs
+::end::
+
+Tue Dec 7 14:43:01 EST 2010
+Daily Stats:
+- 24,922 users
+- 1,503 weekly installs
+::end::
+
+Thu Dec 9 14:43:00 EST 2010
+Daily Stats:
+- 25,653 users
+- 1,924 weekly installs
+::end::
+
+Fri Dec 10 14:43:00 EST 2010
+Daily Stats:
+- 25,653 users
+- 1,924 weekly installs
+::end::
+
+Sat Dec 11 14:43:00 EST 2010
+Daily Stats:
+- 26,465 users
+- 2,089 weekly installs
+::end::
+
+Sun Dec 12 14:43:00 EST 2010
+Daily Stats:
+- 26,702 users
+- 2,113 weekly installs
+::end::
+
+Mon Dec 13 14:43:00 EST 2010
+Daily Stats:
+- 26,946 users
+- 2,142 weekly installs
+::end::
+
+Tue Dec 14 14:43:01 EST 2010
+Daily Stats:
+- 26,946 users
+- 2,142 weekly installs
+::end::
+
+Mon Dec 20 14:43:00 EST 2010
+Daily Stats:
+- 27,560 users
+- 1,846 weekly installs
+::end::
+
+Tue Dec 21 14:43:01 EST 2010
+Daily Stats:
+- 27,490 users
+- 1,846 weekly installs
+::end::
+
+Wed Dec 22 14:43:01 EST 2010
+Daily Stats:
+- 27,603 users
+- 1,832 weekly installs
+::end::
+
+Thu Dec 23 14:43:02 EST 2010
+Daily Stats:
+- 27,738 users
+- 1,793 weekly installs
+::end::
+
 Tue Sep 14 14:43:01 EDT 2010
 Daily Stats:
 - 18,963 users
