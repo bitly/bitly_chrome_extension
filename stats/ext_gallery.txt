@@ -843,3 +843,105 @@ Daily Stats:
 - 5,266 weekly installs
 ::end::
 
+Tue Jan 25 14:43:01 EST 2011
+Daily Stats:
+- 33,571 users
+- 5,282 weekly installs
+::end::
+
+Wed Jan 26 14:43:01 EST 2011
+Daily Stats:
+- 34,040 users
+- 5,306 weekly installs
+::end::
+
+Thu Jan 27 14:43:01 EST 2011
+Daily Stats:
+- 34,634 users
+- 5,439 weekly installs
+::end::
+
+Fri Jan 28 14:43:02 EST 2011
+Daily Stats:
+- 35,357 users
+- 5,284 weekly installs
+::end::
+
+Sat Jan 29 14:43:01 EST 2011
+Daily Stats:
+- 36,013 users
+- 5,280 weekly installs
+::end::
+
+Sun Jan 30 14:43:02 EST 2011
+Daily Stats:
+- 36,323 users
+- 5,309 weekly installs
+::end::
+
+Mon Jan 31 14:43:01 EST 2011
+Daily Stats:
+- 36,574 users
+- 5,336 weekly installs
+::end::
+
+Tue Feb 1 14:43:02 EST 2011
+Daily Stats:
+- 36,702 users
+- 5,290 weekly installs
+::end::
+
+Wed Feb 2 14:43:00 EST 2011
+Daily Stats:
+- 37,178 users
+- 5,309 weekly installs
+::end::
+
+Thu Feb 3 14:43:00 EST 2011
+Daily Stats:
+- 37,500 users
+- 5,513 weekly installs
+::end::
+
+Fri Feb 4 14:43:00 EST 2011
+Daily Stats:
+- 38,094 users
+- 5,639 weekly installs
+::end::
+
+Sat Feb 5 14:43:02 EST 2011
+Daily Stats:
+- 38,739 users
+- 5,981 weekly installs
+::end::
+
+Sun Feb 6 14:43:01 EST 2011
+Daily Stats:
+- 39,286 users
+- 6,295 weekly installs
+::end::
+
+Mon Feb 7 14:43:01 EST 2011
+Daily Stats:
+- 39,591 users
+- 6,677 weekly installs
+::end::
+
+Tue Feb 8 14:43:00 EST 2011
+Daily Stats:
+- 40,171 users
+- 6,892 weekly installs
+::end::
+
+Wed Feb 9 14:43:01 EST 2011
+Daily Stats:
+- 40,910 users
+- 7,133 weekly installs
+::end::
+
+Thu Feb 10 14:43:00 EST 2011
+Daily Stats:
+- 41,638 users
+- 7,175 weekly installs
+::end::
+

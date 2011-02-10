@@ -309,6 +309,13 @@ function init() {
     // close the box, don't let it get stuc
     document.body.addEventListener('click', closeBitlyUrlExpanderBox);
     callBrain( matches );
+    var style_tags = document.getElementsByTagName("style");
+    for(var i=0; i<style_tags.length; i++) {
+        if(/#bitly_expanded_container \.bit_user_clicks_box/.test(style_tags[i].innerText)) {
+            style_tags[i].setAttribute("style", "display:none;");
+            break;
+        }
+    }
 
 }
 // hi there, look for short urls
